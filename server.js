@@ -45,6 +45,7 @@ app.use(function (req, res, next) {
     // Pass to next layer of middleware
     next();
 });
+app.get('/', routes.hello);
 
 app.post('/api/printpdf1', routes.printpdf1);
 

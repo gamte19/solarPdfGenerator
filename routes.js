@@ -8,6 +8,9 @@ function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
+exports.hello = function(req, res) {
+  res.json("NO");
+};
 
 config = {
     "format": "Letter",        // allowed units: A3, A4, A5, Legal, Letter, Tabloid
